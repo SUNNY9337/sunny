@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ani {
+            border: 2px solid black;
+  border-radius: 50%;
+  margin-left: 50px;
+  position: absolute;
+  height: 55vw;
+  width: 55vw;
+  max-width: 500px;
+  max-height: 500px;
+  align-content: center;
+            background-color: aquamarine;
+            animation-name: changeC;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+
+        }
+        
+        
+        @keyframes changeC {
+            0% {
+                background-color: aquamarine;
+                rotate: 20deg;
+                transform: scale(1);
+                
+                border-radius: 10%;
+            }
+
+            10% {
+                background-color: rgb(179, 50, 36);
+                rotate: 40deg;
+                transform: scale(1.1);
+                ;
+                border-radius: 20%;
+            }
+
+            20% {
+                background-color: rgb(205, 148, 34);
+                rotate: 60deg;
+                transform: scale(1.2);
+                ;
+                border-radius: 30%;
+            }
+
+            30% {
+                background-color: rgb(211, 48, 12);
+                rotate: 80deg;
+                transform: scale(1.3);
+                ;
+                border-radius: 40%;
+            }
+
+            40% {
+                background-color: rgb(6, 121, 128);
+                rotate: 100deg;
+                transform: scale(1.4);
+                ;
+                border-radius: 50%;
+            }
+
+            50% {
+                background-color: rgb(224, 244, 76);
+                rotate: 120deg;
+                transform: scale(1.5);
+                ;
+                border-radius: 60%;
+            }
+
+            60% {
+                background-color: rgb(233, 123, 213);
+                rotate: 1400deg;
+                transform: scale(1.4);
+                ;
+                border-radius: 50%;
+            }
+
+            70% {
+                background-color: rgb(250, 122, 122);
+                rotate: 1600deg;
+                transform: scale(1.3);
+                ;
+                border-radius: 40%;
+            }
+
+            80% {
+                background-color: rgb(8, 205, 139);
+                rotate: 180deg;
+                transform: scale(1.2);
+                ;
+                border-radius: 30%;
+            }
+
+            90% {
+                background-color: rgb(17, 241, 126);
+                rotate: 0deg;
+                transform: scale(1.1);
+                ;
+                border-radius: 20%;
+            }
+
+            100% {
+                background-color: rgb(86, 92, 90);
+                rotate: 180deg;
+                transform: scale(1);
+                ;
+                border-radius: 10%;
+            }
+        }
+            .line {
+  background-color: black;
+  width: 50%;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0% 0%;
+}
+
+.line:nth-of-type(2) {
+  transform: rotate(60deg);
+}
+.line:nth-of-type(3) {
+  transform: rotate(120deg);
+}
+.line:nth-of-type(4) {
+  transform: rotate(180deg);
+}
+.line:nth-of-type(5) {
+  transform: rotate(240deg);
+}
+.line:nth-of-type(6) {
+  transform: rotate(300deg);
+}
+
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="ani">
+        <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </div>
+</body>
+
+</html>
